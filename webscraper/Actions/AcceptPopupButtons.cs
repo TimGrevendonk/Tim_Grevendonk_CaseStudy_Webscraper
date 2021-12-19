@@ -24,13 +24,13 @@ namespace webscraper.Actions
             catch {/*Do nothing, just ignore the possible error*/}
             try
             {
-                // Indeed confirm cookies.
+                    // Indeed confirm cookies.
                 Globals.driver.FindElement(By.CssSelector("#cookie-preferences div[class='save-preference-btn-container'] button")).Click();
             }
             catch {/*Do nothing, just ignore the possible error*/}
             try
             {
-                // bell of lost souls accpet coockies.
+                    // bell of lost souls accept cookies.
                 Globals.driver.FindElement(By.XPath("//*[@id='qc-cmp2-ui']/div[2]/div/button[2]")).Click();
             }
             catch {/*Do nothing, just ignore the possible error*/}

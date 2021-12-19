@@ -26,18 +26,21 @@ namespace webscraper.Actions
                 // Find the "sort by: upload date" button and click it.
             IWebElement uploadDateButton = Globals.driver.FindElement(By.XPath("//*[@id='collapse-content']/ytd-search-filter-group-renderer[5]/ytd-search-filter-renderer[2]/a"));
             uploadDateButton.Click();
+                // Wait for loading of the page.
             System.Threading.Thread.Sleep(1000);
         }
 
         public static void SearchForIndeedJobs(String searchCity, String searchJob = "IT")
         {
-                // find city input field.
+                // Find city input field. and input values.
             IWebElement searchBarCityName = Globals.driver.FindElement(By.Id("text-input-where"));
             searchBarCityName.SendKeys(searchCity);
-            //
+                // Find job input field, and input values.
             IWebElement searchBarJobName = Globals.driver.FindElement(By.Id("text-input-what"));
             searchBarJobName.SendKeys(searchJob);
+                // Submit the fields/form.
             searchBarJobName.Submit();
+                // Wait for page loadingS
             System.Threading.Thread.Sleep(1000);
         }
     }
