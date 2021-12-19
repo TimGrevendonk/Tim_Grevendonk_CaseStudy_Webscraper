@@ -13,7 +13,8 @@
 		<StartupObject />
 		<NuGetPackageImportStamp>
 		</NuGetPackageImportStamp>
-		
+		<CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+
 	</PropertyGroup>
 
 	<ItemGroup>
