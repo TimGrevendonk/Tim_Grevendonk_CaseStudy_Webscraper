@@ -28,6 +28,7 @@ namespace webscraper.Models
             Link = link;
         }
 
+            // needed if wanting to compare object instead of strings.
         /*public override int GetHashCode()
         {
                 // to compare the object to eachother.
@@ -36,12 +37,13 @@ namespace webscraper.Models
 
         public bool Equals(YoutubeVideo other)
         {
+                // Check if the link is equal than the other (used for sortedSet).
             return Link == other.Link;
         }
 
         public int CompareTo(YoutubeVideo other)
         {
-                // compare the Link of the database to the current one.
+                // compare the Link of the database to the current one (used for sortedSet).
             return Link.CompareTo(other.Link);
         }
 

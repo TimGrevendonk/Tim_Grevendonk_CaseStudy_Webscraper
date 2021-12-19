@@ -12,6 +12,7 @@ namespace webscraper.DAL
 {
     class SqliteRepository
     {
+            // Empty constructor.
         public SqliteRepository()
         {
         }
@@ -26,6 +27,7 @@ namespace webscraper.DAL
             // Proctected = this class and inherited classes can only use the method.
         protected static bool DatabaseExists()
         {
+                // Just check if the database is already present in the files.
             return File.Exists(@"WebscraperDB.sqlite");
         }
 

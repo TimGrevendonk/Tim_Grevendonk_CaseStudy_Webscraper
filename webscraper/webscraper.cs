@@ -69,7 +69,7 @@ namespace webscraper
                         // Show the prompt to enter a city value.
                     InputSearchValue.ShowAskCity();
                     string searchCity = Console.ReadLine();
-                    // Do a search, filtering on jobs and city.
+                        // Do a search, filtering on jobs and city.
                     AcceptPopupButtons.TryAll();
                     ActiveWebsiteSearch.SearchForIndeedJobs(searchCity, searchJob);
                         // get the info of the jobs returned.
@@ -99,7 +99,7 @@ namespace webscraper
                     // I = info of saved/database items.
                 if(selection == "I")
                 {
-                        // Shiw promt to ask for wich info
+                        // Show promt to ask for wich info
                     InputSearchValue.ShowSavedInfo();
                         // Ask the wanted info category.
                     String showInfo = Console.ReadLine().Substring(0, 1).ToUpper();
@@ -108,16 +108,17 @@ namespace webscraper
                             // Show the results stored in the SQL YoutubeVideo table.
                         WebsiteResults.ShowYoutubeVideos(Globals.youtubeVideos);
                         WebsiteResults.ShowEndOfResults();
-                        // Any input will return to the big loop.
+                            // Any input will return to the big loop.
                         Console.ReadLine();
                     }
                 }
 
-                    // D =delete saved info.
+                    // D = delete saved info.
                 if (selection == "D")
                 {
+                        // Show promt to ask from what data to delete.
                     InputSearchValue.ShowDeleteInfo();
-                    
+                        // Read the input to select a choice.
                     string deleteInfo = Console.ReadLine().Substring(0, 1).ToUpper();
                     if(deleteInfo == "Y")
                     {
@@ -128,7 +129,7 @@ namespace webscraper
                     }
                 }
 
-                    // M = My own webpage.
+                    // M = My own webpage. (used for debugging with driver)
                 if (selection == "M")
                 {
                         // Show the prompt to enter a URL

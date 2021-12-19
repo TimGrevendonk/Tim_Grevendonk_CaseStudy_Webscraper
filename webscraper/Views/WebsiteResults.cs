@@ -32,6 +32,7 @@ namespace webscraper.Views
             Console.WriteLine("page: WebsiteResults.ShowYoutubeVideos");
             Console.WriteLine("------------------------------");
             Console.WriteLine(" ");
+                // foreach video give the paramaeters individually in the console.
             foreach (YoutubeVideo video in youtubeVideos)
             {
                 Console.WriteLine(video.Title);
