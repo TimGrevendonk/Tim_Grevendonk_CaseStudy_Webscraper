@@ -16,10 +16,10 @@ jobs:
     - name: Setup .NET
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: 4.7.2
+        dotnet-version: 4.8
       
     - name: create artifact
-      run: dotnet publish -r win-x64 -c Release --self-contained
+      run: dotnet publish
       
     - name: Upload artifacts
       uses: actions/upload-artifact@v2
