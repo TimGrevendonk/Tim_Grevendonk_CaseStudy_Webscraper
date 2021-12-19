@@ -18,6 +18,9 @@ jobs:
       with:
         dotnet-version: 5.0.x
         
+    - name: Restore dependencies
+      run: dotnet restore
+        
     - name: Create artifact
       run: dotnet publish -r win-x64 -c Release /p:PublishSingleFile=true
       
