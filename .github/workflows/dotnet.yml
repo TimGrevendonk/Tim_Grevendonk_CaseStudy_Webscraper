@@ -18,8 +18,6 @@ jobs:
       with:
         dotnet-version: 5.0.x
       
-    - name: create artifact
-      run: dotnet publish
       
     - name: Upload artifacts
       uses: actions/upload-artifact@v2
