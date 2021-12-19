@@ -21,7 +21,7 @@ jobs:
       run: dotnet restore
       
     - name: create artifact
-      run: dotnet publish -c Release -r win-x64 /p:PublishSingleFile=true
+      run: dotnet publish -c Release -r win-x64 --self-contained
       
     - name: Upload artifacts
       uses: actions/upload-artifact@v2
