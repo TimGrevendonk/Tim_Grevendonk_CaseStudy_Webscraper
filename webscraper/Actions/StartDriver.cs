@@ -14,7 +14,7 @@ namespace webscraper.Actions
         {
                 // Add the option to disable system logging and add the driver path.
             // -----logging still active, find alternative way-----
-            ChromeDriverService service = ChromeDriverService.CreateDefaultService(@"../../" + "/Drivers/");
+            ChromeDriverService service = ChromeDriverService.CreateDefaultService(@"../../.." + "/Drivers/");
             service.SuppressInitialDiagnosticInformation = true;
                 // Use the chromedriver.exe in the Drivers folder, and the options.
             ChromeDriver Driver = new ChromeDriver(service);
