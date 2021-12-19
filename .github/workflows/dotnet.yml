@@ -28,4 +28,4 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: Tim_Grevendonk_webscraper
-        path: Tim_Grevendonk_CaseStudy_Webscraper/webscraper/bin/Debug/net5.0-windows/
+        path: webscraper/bin/Debug/net5.0-windows/
